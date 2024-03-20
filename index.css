@@ -1,0 +1,55 @@
+/* Reset some default styles for the page */
+body, p {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body {
+    background-image: url('jitters.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    /* background-attachment: fixed; Optional: Keeps the background fixed */
+    height: 100vh; /* Make the background fill the entire viewport height */
+    overflow: hidden; /* Hide any overflow content */
+    display: flex; /* Use flexbox to center the h1 vertically and horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Style the h1 element */
+h1 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: white; /* Change text color to white */
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+}
+
+.result {
+    flex: 1;
+    margin-left: 20px; /* Adjust the margin as needed */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.result h2 {
+    color: #333;
+}
+
+#consoleResult {
+    margin-top: 10px;
+    min-height: 100px; /* Set minimum height for the result area */
+    overflow-y: auto; /* Add scrollbar if needed */
+    padding: 5px;
+}
